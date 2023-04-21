@@ -5,15 +5,14 @@
 * mongo-secret.yaml
 * mongo.yaml
 * webapp.yaml
+##### Mongo with local storage
+* storage/local-storage-class.yaml
+* storage/local-mongo.yaml
 
 #### K8s commands
 
-##### start Minikube and check status
-    minikube start --vm-driver=hyperkit 
-    minikube status
-
-##### get minikube node's ip address
-    minikube ip
+##### make sure kubernetes on your local running
+    kubectl version
 
 ##### get basic info about k8s components
     kubectl get node
@@ -32,21 +31,9 @@
 ##### get application logs
     kubectl logs {pod-name}
     
-##### stop your Minikube cluster
-    minikube stop
-
-<br />
-
-> :warning: **Known issue - Minikube IP not accessible** 
-
-If you can't access the NodePort service webapp with `MinikubeIP:NodePort`, execute the following command:
-    
-    minikube service webapp-service
-
-<br />
-
 #### Links
 * mongodb image on Docker Hub: https://hub.docker.com/_/mongo
 * webapp image on Docker Hub: https://hub.docker.com/repository/docker/nanajanashia/k8s-demo-app
 * k8s official documentation: https://kubernetes.io/docs/home/
 * webapp code repo: https://gitlab.com/nanuchi/developing-with-docker/-/tree/feature/k8s-in-hour
+* run local dashboard: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
