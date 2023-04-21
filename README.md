@@ -37,3 +37,4 @@
 * k8s official documentation: https://kubernetes.io/docs/home/
 * webapp code repo: https://gitlab.com/nanuchi/developing-with-docker/-/tree/feature/k8s-in-hour
 * run local dashboard: https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+* ingress: https://www.youtube.com/watch?v=80Ew_fsV4rM
